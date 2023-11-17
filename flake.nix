@@ -28,7 +28,7 @@
               # boot.kernelPackages = pkgs.linuxPackages_6_1;
               nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
               nix.registry.nixpkgs.flake = nixpkgs;
-              sdImage.compressImage = false;
+              sdImage.compressImage = true;
               sdImage.imageBaseName = "pi5-image";
               nixpkgs.overlays = [
                 (final: super: {
