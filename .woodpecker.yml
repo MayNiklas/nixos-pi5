@@ -16,7 +16,7 @@
       {
         "commands":
           [
-            "nix build ''.#nixosConfigurations.pi5.config.system.build.toplevel'",
+            "nix build '.#nixosConfigurations.pi5.config.system.build.toplevel'",
           ],
         "image": "bash",
         "name": "build config",

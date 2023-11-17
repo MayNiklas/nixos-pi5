@@ -36,6 +36,7 @@
                     super.makeModulesClosure (x // { allowMissing = true; });
                 })
               ];
+              hardware.deviceTree.filter = pkgs.lib.mkForce "bcm2712-rpi-5*.dtb";
               nixpkgs.hostPlatform = pkgs.lib.mkDefault "${system}";
               system.stateVersion = "23.11";
             }
