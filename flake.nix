@@ -22,10 +22,10 @@
         nixpkgs.lib.nixosSystem {
           modules = [
             "${nixpkgs}/nixos/modules/installer/sd-card/sd-image-aarch64.nix"
-            nixos-hardware.nixosModules.raspberry-pi-4
+            # nixos-hardware.nixosModules.raspberry-pi-4
             {
               # try out kernel versions here
-              # boot.kernelPackages = pkgs.linuxPackages_6_1;
+              boot.kernelPackages = pkgs.linuxPackages_6_1;
               nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
               nix.registry.nixpkgs.flake = nixpkgs;
               sdImage.compressImage = true;
@@ -36,7 +36,7 @@
                     super.makeModulesClosure (x // { allowMissing = true; });
                 })
               ];
-              hardware.deviceTree.filter = pkgs.lib.mkForce "bcm2712-rpi-5*.dtb";
+              # hardware.deviceTree.filter = pkgs.lib.mkDefault "bcm2712-*.dtb";
               nixpkgs.hostPlatform = pkgs.lib.mkDefault "${system}";
               system.stateVersion = "23.11";
             }
