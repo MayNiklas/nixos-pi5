@@ -3,6 +3,6 @@
 Try to get the Raspberry Pi 5 working with NixOS.
 Therefor, I'm building bootable images with different kernels and bootloaders.
 
-| Kernel version | Image link       | Status |
-| -------------- | ---------------- | ------ |
-| 6.1.21         | [Download](TODO) | TODO   |
+| Kernel version | Image link                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Status |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 6.1.21         | [Download](https://s3.eu-central-003.backblazeb2.com/crab-share/01HG094WQ69HK74YX7MTQDHHM1/pi5-image-23.11.20231114.bf744fe-aarch64-linux.img.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=003d560892a1b3a0000000002%2F20231117%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20231117T090423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-cache-control=no-cache%2C+no-store&X-Amz-Signature=d5ac14647af8d7b6af4fb8446e68edbae85f7a5ee138618e85616fde405a586e) | TODO   |
